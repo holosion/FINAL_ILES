@@ -135,17 +135,7 @@ frontend
 | Build Command | `npm run build` |
 | Output Directory | `dist` |
 
-8. Add this environment variable:
-
-| Name | Value |
-|---|---|
-| `VITE_API_BASE_URL` | `https://YOUR_RENDER_BACKEND_URL/api` |
-
-Example:
-
-```text
-VITE_API_BASE_URL=https://iles-backend.onrender.com/api
-```
+8. Environment variable (optional): the repo includes `frontend/.env.production` with `VITE_API_BASE_URL` pointing at the live Render API, so Vercel’s production build already targets the backend. You only need to add `VITE_API_BASE_URL` in the Vercel UI if you want to override that URL per environment.
 
 9. Click **Deploy**.
 
