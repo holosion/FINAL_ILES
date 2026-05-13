@@ -5,7 +5,13 @@ This guide deploys the Internship Logging & Evaluation System (ILES) from GitHub
 Repository:
 
 ```text
-https://github.com/holosion/ILES.git
+https://github.com/holosion/FINAL_ILES.git
+```
+
+Production API (Render), for Vercel `VITE_API_BASE_URL` or local `.env`:
+
+```text
+https://iles-backend-magf.onrender.com/api
 ```
 
 ## What Will Be Deployed
@@ -53,7 +59,7 @@ Render official Django guidance recommends PostgreSQL, WhiteNoise, a build scrip
 6. Select the repository:
 
 ```text
-holosion/ILES
+holosion/FINAL_ILES
 ```
 
 7. Render will read `render.yaml`.
@@ -111,7 +117,7 @@ Vercel official Vite guidance uses normal Vite build output and `VITE_` environm
 5. Import the GitHub repository:
 
 ```text
-holosion/ILES
+holosion/FINAL_ILES
 ```
 
 6. Set **Root Directory** to:
