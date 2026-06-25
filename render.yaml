@@ -9,7 +9,7 @@ services:
     name: iles-backend
     runtime: python
     plan: free
-    rootDir: backend
+    rootDirectory: backend
     buildCommand: bash build.sh
     startCommand: gunicorn iles_backend.wsgi:application
     envVars:
