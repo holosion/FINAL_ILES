@@ -1,15 +1,14 @@
 databases:
   - name: iles-db
     plan: free
-    databaseName: iles
-    user: iles
+    ipAllowList: []
 
 services:
   - type: web
     name: iles-backend
     runtime: python
     plan: free
-    rootDirectory: backend
+    rootDir: backend
     buildCommand: bash build.sh
     startCommand: gunicorn iles_backend.wsgi:application
     envVars:
